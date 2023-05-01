@@ -11,7 +11,7 @@
 <br>
 
 ## About
-Welcome to my GitHub project dedicated to bioacoustic analysis of echolocation clicks of Odontocetes such as dolphins and whales. This project was developed as part of a Data Challenge proposed by the [Ecole Normale Supérieure](https://challengedata.ens.fr/participants/challenges/85/).
+Welcome to our GitHub project dedicated to bioacoustic analysis of echolocation clicks of Odontocetes such as dolphins and whales. This project was developed as part of a Data Challenge proposed by the [Ecole Normale Supérieure](https://challengedata.ens.fr/participants/challenges/85/).
 
 Our analysis focuses on the use of improved sound recording technologies and neural networks to enhance our understanding of inter-species communication and monitor biodiversity health to contribute to ecosystem preservation.
 
@@ -35,14 +35,18 @@ If you use conda virtual env:
 conda env create -f environment.yml
 conda activate biosonar
 ```
+To get data, you may need to subscribe to the [challenge]((https://challengedata.ens.fr/participants/challenges/85/)
 
-### Feature extraction approach
+
+
+### Data Processing
  We focused on using spectrograms, which are a time-frequency representation of a signal based on signal processing theory. After applying a bandpass filter to select relevant frequencies, we used the short-time Fourier transform (STFT) to create the spectrogram. A Hamming window with a size of 2048 and an overlap of 128 was applied to each audio segment to create the spectrogram. Additionally, we applied adaptive filtering using Wiener decomposition to reduce noise in the audio signal. The resulting spectrograms were then normalized, resized, and converted to a 3-channel RGB representation for use in deep learning models.
 
  ![Final processed audio sample containing clic (Positive)](visuals/denoised_serie_pos.png)
 ![Final processed sample not containing clic (Negative)](visuals/denoised_serie_neg.png)
 
-### Results
+
+### Models and performances 
 
 We evaluated the performance of our models using the Area Under the Receiver Operating Characteristic Curve (AUC) metric. Our baseline OdontoceteCNN model achieved an AUC score of 0.89, which is a strong result given the complexity of the task.
 
