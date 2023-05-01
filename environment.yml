@@ -1,0 +1,20 @@
+name: biosonar
+
+dependencies:
+  - pip:
+      - librosa
+      - scipy
+      - numpy
+      - pandas
+      - matplotlib
+      - plotly
+      - keras
+      - tensorflow
+      - scikit-learn
+      - tqdm
+      - soundfile
+      - noisereduce
+
+
+
+
