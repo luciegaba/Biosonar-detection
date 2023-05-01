@@ -35,7 +35,7 @@ If you use conda virtual env:
 conda env create -f environment.yml
 conda activate biosonar
 ```
-To get data, you may need to subscribe to the [challenge]((https://challengedata.ens.fr/participants/challenges/85/)
+**To get data, you may need to subscribe to the [Challenge !](https://challengedata.ens.fr/participants/challenges/85/)**
 
 
 
