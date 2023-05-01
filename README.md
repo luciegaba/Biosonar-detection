@@ -5,6 +5,7 @@
 * [About](#about)
 * [Contents](#contents)
 * [Installation](#installation)
+* [Audio Processing](#Audio Processing)
 * [Results](#results)
 * [Contact](#contact)
 
@@ -39,7 +40,7 @@ conda activate biosonar
 
 
 
-### Data Processing
+### Audio Processing
  We focused on using spectrograms, which are a time-frequency representation of a signal based on signal processing theory. After applying a bandpass filter to select relevant frequencies, we used the short-time Fourier transform (STFT) to create the spectrogram. A Hamming window with a size of 2048 and an overlap of 128 was applied to each audio segment to create the spectrogram. Additionally, we applied adaptive filtering using Wiener decomposition to reduce noise in the audio signal. The resulting spectrograms were then normalized, resized, and converted to a 3-channel RGB representation for use in deep learning models.
 
  ![Final processed audio sample containing clic (Positive)](visuals/denoised_serie_pos.png)
