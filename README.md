@@ -5,7 +5,7 @@
 * [About](#about)
 * [Contents](#contents)
 * [Installation](#installation)
-* [Audio Processing](#Audio_Processing)
+* [Audio Processing](#audio-processingg)
 * [Results](#results)
 * [Contact](#contact)
 
@@ -47,7 +47,7 @@ conda activate biosonar
 ![Final processed sample not containing clic (Negative)](visuals/denoised_serie_neg.png)
 
 
-### Models and performances 
+### Results
 
 We evaluated the performance of our models using the Area Under the Receiver Operating Characteristic Curve (AUC) metric. Our baseline OdontoceteCNN model achieved an AUC score of 0.89, which is a strong result given the complexity of the task.
 
